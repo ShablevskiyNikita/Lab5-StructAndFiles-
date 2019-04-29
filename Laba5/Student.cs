@@ -21,7 +21,7 @@ namespace struct_lab_student
         public Student(string lineWithAllData)
         {
             
-            string [] entries =  lineWithAllData.Split(;
+            string [] entries =  lineWithAllData.Split();
             surName = entries[0];
             firstName = entries[1];
             patronymic = entries[2];
