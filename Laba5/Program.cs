@@ -23,7 +23,7 @@ namespace struct_lab_student
         static void Main(string[] args)
         {
             Student[] studs = ReadData("input.txt");
-            runMenu(studs);
+            RunMenu(studs);
         }
     }
 }
