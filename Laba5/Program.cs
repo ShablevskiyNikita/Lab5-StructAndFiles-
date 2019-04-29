@@ -47,6 +47,7 @@ namespace struct_lab_student
                         break;
                     case "3":
                         //Mikitka`s method
+                        SearchAllFives(studs);
                         break;
                 }
             }
