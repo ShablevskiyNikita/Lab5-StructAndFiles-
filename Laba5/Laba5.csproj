@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Lipovatiy.cs" />
-    <Compile Include="Paharenko.cs" />
+    <Compile Include="LipovatiyNikita.cs" />
+    <Compile Include="PakharenkoIhor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Shablevskiy.cs" />
+    <Compile Include="ShablevskiyMikitka.cs" />
     <Compile Include="Student.cs" />
   </ItemGroup>
   <ItemGroup>
