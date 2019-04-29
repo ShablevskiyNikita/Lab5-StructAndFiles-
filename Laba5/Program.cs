@@ -43,7 +43,7 @@ namespace struct_lab_student
                         //Nikita`s method
                         break;
                     case "2":
-                        //Ihor`s method
+                        Program.HandleIneffectiveStudents(studs);
                         break;
                     case "3":
                         //Mikitka`s method
