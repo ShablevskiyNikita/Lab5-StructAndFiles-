@@ -55,8 +55,7 @@ namespace struct_lab_student
         {
             Student[] studs = ReadData("input.txt");
             RunMenu(studs);
-            Console.WriteLine(studs[1].firstName);
-            Console.WriteLine(studs[1].mathematicsMark);
+            Console.ReadKey();
         }
     }
 }

@@ -8,6 +8,6 @@ namespace struct_lab_student
 {
     partial class Program
     {
-        
+        public 
     }
 }
