@@ -4,12 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laba5
+namespace struct_lab_student
 {
-    class Program
+    partial class Program
     {
+        static Student[] ReadData(string fileName)
+        {
+            // TODO   implement this method.
+            // It should read the file whose fileName has been passed and fill 
+        }
+
+        static void runMenu(Student[] studs)
+        {
+            // TODO   implement this method
+            // It should call method(s) for concrete variant(s)
+        }
+
         static void Main(string[] args)
         {
+            Student[] studs = ReadData("input.txt");
+            runMenu(studs);
         }
     }
 }
