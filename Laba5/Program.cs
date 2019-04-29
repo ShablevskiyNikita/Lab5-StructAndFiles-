@@ -14,7 +14,7 @@ namespace struct_lab_student
             // It should read the file whose fileName has been passed and fill 
         }
 
-        static void runMenu(Student[] studs)
+        static void RunMenu(Student[] studs)
         {
             // TODO   implement this method
             // It should call method(s) for concrete variant(s)
