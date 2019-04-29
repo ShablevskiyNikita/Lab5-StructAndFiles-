@@ -10,32 +10,26 @@ namespace struct_lab_student
     {
         private static void SearchAllFives(Student[] studs)
         {
-            List<int> indexGreatStudent = new List<int>();
+            List<int> indexesGreatStudent = new List<int>();
             for (int i = 0; i < studs.Length; i++)
             {
-                bool isGreatStudent = true;
-                if(studs[i].mathematicsMark!='5')
+                if(studs[i].mathematicsMark == '5' && studs[i].informaticsMark == '5'&& studs[i].physicsMark == '5')
                 {
-                    isGreatStudent = false;
-                }
-                if (studs[i].informaticsMark != '5')
-                {
-                    isGreatStudent = false;
-                }
-                if (studs[i].physicsMark != '5')
-                {
-                    isGreatStudent = false;
-                }
-                if(isGreatStudent)
-                {
-                    indexGreatStudent.Add(i);
+                    indexesGreatStudent.Add(i);
                 }
             }
-            Console.WriteLine("Кількість відмінників : {0}", indexGreatStudent.Count);
-            Console.WriteLine("Cписок відмінників і їх стипендії :");
-            for (int i = 0; i < indexGreatStudent.Count; i++)
+            Console.WriteLine("Кількість відмінників : {0}", indexesGreatStudent.Count);
+            if(indexesGreatStudent.Count > 0)
             {
-                Console.WriteLine("{0} {1} {2} {3}", studs[indexGreatStudent[i]].surName, studs[indexGreatStudent[i]].firstName, studs[indexGreatStudent[i]].patronymic, studs[indexGreatStudent[i]].scholarship);
+                Console.WriteLine("Cписок відмінників і їх стипендії :");
+                for (int i = 0; i < indexesGreatStudent.Count; i++)
+                {
+                    Console.WriteLine("{0} {1} {2} {3}", studs[indexesGreatStudent[i]].surName, studs[indexesGreatStudent[i]].firstName, studs[indexesGreatStudent[i]].patronymic, studs[indexesGreatStudent[i]].scholarship);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Немає студентів з усіма п'ятірками");
             }
         }
     }
