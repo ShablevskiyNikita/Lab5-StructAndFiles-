@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace struct_lab_student
@@ -21,7 +22,7 @@ namespace struct_lab_student
         public Student(string lineWithAllData)
         {
             
-            string [] entries =  lineWithAllData.Split();
+            string [] entries = Regex.Split(lineWithAllData, "\\s+");
             surName = entries[0];
             firstName = entries[1];
             patronymic = entries[2];
