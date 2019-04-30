@@ -41,6 +41,7 @@ namespace struct_lab_student
                         break;
                     case "1":
                         //Nikita`s method
+                        SearchAllFivesAndUpgradeItScholarship(studs);
                         break;
                     case "2":
                         Program.HandleIneffectiveStudents(studs);
